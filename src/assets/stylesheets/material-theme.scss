@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$cash-brolik-app-primary: mat-palette($mat-grey, 800);
+$cash-brolik-app-accent:  mat-palette($mat-light-green, 800);
+$cash-brolik-app-warn:    mat-palette($mat-red, 800);
+
+$cash-brolik-app-theme: mat-light-theme((
+  color: (
+    primary: $cash-brolik-app-primary,
+    accent: $cash-brolik-app-accent,
+    warn: $cash-brolik-app-warn,
+  )
+));
+
+@include angular-material-theme($cash-brolik-app-theme);

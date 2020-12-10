@@ -1,0 +1,100 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+  <header class="android-header mdl-layout__header mdl-layout__header--waterfall">
+    <div class="mdl-layout__header-row">
+      <span class="android-title mdl-layout-title">
+        <button id="buttonBrolikENTERTAINMENT" class="mdl-mega-footer--social-btn mdl-typography--font-light mdl-typography--display-1-color-contrast" onclick="document.location='/';return false;">Brolik ENTERTAINMENT</button>
+        <app-reseaux-sociaux></app-reseaux-sociaux>
+      </span>
+      <!-- Add spacer, to align navigation to the right in desktop -->
+      <div class="android-header-spacer mdl-layout-spacer"></div>
+      <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+          <mat-icon>search</mat-icon>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="search-field">
+        </div>
+      </div>
+      <!-- Navigation -->
+      <div class="android-navigation-container">
+        <nav class="android-navigation mdl-navigation">
+          <a class="mdl-navigation__link mdl-typography--text-uppercase" routerLink="/" routerLinkActive="active">Accueil</a>
+          <a class="mdl-navigation__link mdl-typography--text-uppercase" routerLink="/musique/videos" routerLinkActive="active">Musiques</a>
+          <a class="mdl-navigation__link mdl-typography--text-uppercase" routerLink="/musique/downloads" routerLinkActive="active">Téléchargements</a>
+          <a class="mdl-navigation__link mdl-typography--text-uppercase" routerLink="/actualitees.html" routerLinkActive="active">Actualitées</a>
+          <a class="mdl-navigation__link mdl-typography--text-uppercase" routerLink="/evenements.html" routerLinkActive="active">Evennements</a>
+          <!--<a class="mdl-navigation__link mdl-typography--text-uppercase" routerLink="/boutique.html" routerLinkActive="active">Boutique</a>-->
+          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/social/contact">Contact</a>
+          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/social/map">Map</a>
+        </nav>
+      </div>
+      <span class="android-mobile-title mdl-layout-title">
+      </span>
+      <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+        <li class="mdl-menu__item"><a class="linkReseauxSociaux" href="https://www.youtube.com/channel/UCP0elXZ7DZHFLYrKrDAqfvg">Youtube</a></li>
+        <li class="mdl-menu__item"><a class="linkReseauxSociaux" href="https://www.facebook.com/CashBrolikOfficiel/">Facebook</a></li>
+        <li class="mdl-menu__item"><a class="linkReseauxSociaux" href="https://twitter.com/cash_brolik">Twitter</a></li>
+        <li class="mdl-menu__item"><a class="linkReseauxSociaux" href="https://www.instagram.com/cash_brolik/">Instagram</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <div class="android-drawer mdl-layout__drawer">
+    <span class="mdl-layout-title">
+      <h5 class="font-white">Cash B</h5>
+      <h6 class="font-white">Brolik ENTERTAINMENT</h6>
+    </span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" routerLink="/home" routerLinkActive="active">Accueil</a>
+      <a class="mdl-navigation__link" routerLink="/musique/videos" routerLinkActive="active">Musiques</a>
+      <!--<a class="mdl-navigation__link" routerLink="/boutique.html" routerLinkActive="active">Boutique</a>-->
+      <div class="android-drawer-separator"></div>
+      <span class="mdl-navigation__link">Informations</span>
+      <a class="mdl-navigation__link" routerLink="/evenements.html" routerLinkActive="active">Evenements</a>
+      <a class="mdl-navigation__link" href="/newsletter.html">Newsletter</a>
+      <a class="mdl-navigation__link" href="/contact.html">Contact</a>
+      <a class="mdl-navigation__link" routerLink="/license.html" routerLinkActive="active">Mentions légales</a>
+      <div class="android-drawer-separator"></div>
+      <span class="mdl-navigation__link">Réseaux sociaux</span>
+      <a class="mdl-navigation__link" href="https://www.youtube.com/channel/UCP0elXZ7DZHFLYrKrDAqfvg">Youtube</a>
+      <a class="mdl-navigation__link" href="https://www.facebook.com/CashBrolikOfficiel/">Facebook</a>
+      <a class="mdl-navigation__link" href="https://twitter.com/cash_brolik">Twitter</a>
+      <a class="mdl-navigation__link" href="https://www.instagram.com/cash_brolik/">Instagram</a>
+      <a class="mdl-navigation__link" href="https://www.snapchat.fr">Snapchat</a>
+    </nav>
+  </div>
+
+  <div class="android-content mdl-layout__content">
+
+    <router-outlet></router-outlet>
+
+    <hr>
+    <footer id="footer" class="android-footer mdl-mega-footer">
+      <div class="mdl-mega-footer--top-section">
+        <div class="mdl-mega-footer--left-section">
+          <app-reseaux-sociaux></app-reseaux-sociaux>
+        </div>
+        <div class="mdl-mega-footer--right-section">
+          <a class="mdl-typography--font-light" href="index.html#top">
+            Haut de page
+            <mat-icon>expand_less</mat-icon>
+          </a>
+        </div>
+      </div>
+      <hr>
+      <div class="mdl-mega-footer--middle-section">
+        <p class="mdl-typography--font-light">Cash B: © 2017 Brolik ENTERTAINMENT</p>
+      </div>
+      <div class="mdl-mega-footer--bottom-section">
+        <a class="android-link mdl-typography--font-light" href="/contact.html">Nous contacter</a>
+        <a class="android-link mdl-typography--font-light" href="/newsletter.html">Newsletter</a>
+        <a class="android-link mdl-typography--font-light" routerLink="/license.html" routerLinkActive="active">Mentions légales</a>
+      </div>
+    </footer>
+  </div>
+</div>

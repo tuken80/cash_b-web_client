@@ -1,0 +1,30 @@
+<form [formGroup]="FormContact">
+  <mat-form-field class="full-width mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" matInput name="Sujet" formControlName="sujet" required>
+    <mat-placeholder>
+      Sujet:
+    </mat-placeholder>
+    <mat-error *ngIf="(FormContact.get('sujet').invalid && (FormContact.get('sujet').dirty || FormContact.get('sujet').touched)) && FormContact.get('sujet').errors.required">Le sujet est obligatoire.</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="full-width mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" matInput name="Email" type="email" formControlName="mail" required>
+    <mat-placeholder>
+      Adresse mail:
+    </mat-placeholder>
+    <mat-icon matSuffix>mail</mat-icon>
+    <mat-error *ngIf="(FormContact.get('mail').invalid && (FormContact.get('mail').dirty || FormContact.get('mail').touched)) && FormContact.get('mail').errors.required">L'adresse mail est obligatoire.</mat-error>
+    <mat-error *ngIf="(FormContact.get('mail').invalid && (FormContact.get('mail').dirty || FormContact.get('mail').touched)) && FormContact.get('mail').errors.email">L'adresse mail doit être au bon format.</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="full-width mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <textarea class="mdl-textfield__input" matInput name="Message" type="text" rows="5"  formControlName="message" required></textarea>
+    <mat-placeholder>
+      Message:
+    </mat-placeholder>
+    <mat-error *ngIf="(FormContact.get('message').invalid && (FormContact.get('message').dirty || FormContact.get('message').touched)) && FormContact.get('message').errors.email">Le message est obligatoire.</mat-error>
+  </mat-form-field>
+  <div id="itemsAlignCenterBis">
+    <button mat-raised-button type="submit">Envoyer</button>
+  </div>
+</form>

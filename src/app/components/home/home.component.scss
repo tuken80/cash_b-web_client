@@ -1,0 +1,26 @@
+mat-card {
+  margin: 50px;
+}
+
+#couverture {
+  margin-top: 40px;
+  background-image: url("../../../assets/images/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#portrait-cash-brolik {
+  margin: auto;
+  border-radius: 15px;
+  border: 10px grey solid;
+}
+
+.link-news {
+  color: #8BC34A;
+}
+
+.article-image {
+  height: 100%;
+  width: 100%;
+}
