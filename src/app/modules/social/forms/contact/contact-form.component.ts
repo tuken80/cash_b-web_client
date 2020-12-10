@@ -27,4 +27,7 @@ export class ContactFormComponent implements OnInit {
     });
   }
 
+  send() {
+
+  }
 }

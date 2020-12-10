@@ -1,19 +1,20 @@
-#buttonFacebook {
-  margin-left: 10px;
-}
-
-.buttonReseauxSociaux {
-  cursor: pointer;
-  background-color: white;
-}
-
-.imageReseauxSociaux {
+img {
   -webkit-transition: -webkit-transform 1s;
   transition: transform 1s;
 }
 
-.imageReseauxSociaux:hover {
+img:hover {
   -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+
+#buttonFacebook {
+  margin-left: 10px;
+}
+
+button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
 }

@@ -32,7 +32,7 @@
 <div fxLayout="row" fxLayoutAlign="space-around">
   <mat-card fxFlex="35">
     <mat-card-header>
-      <mat-card-title>MUSIQUE</mat-card-title>
+      <mat-card-title>MEDIATHEQUE</mat-card-title>
       <mat-card-subtitle>Accédez à toutes nos créations</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="/assets/images/musique.jpg" alt="Accéder aux musiques">
@@ -78,153 +78,129 @@
   -->
   <hr>
   <div class="android-more-section">
-    <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
-    <div class="android-card-container mdl-grid">
-      <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-        <div class="mdl-card__media">
-          <img src="assets/images/more-from-1.png">
-        </div>
-        <div class="mdl-card__title">
-          <h4 class="mdl-card__title-text">Get going on Android</h4>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
-        </div>
-        <div class="mdl-card__actions">
-          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-            Make the switch
-            <mat-icon>chevron_right</mat-icon>
-          </a>
-        </div>
-      </div>
-
-      <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-        <div class="mdl-card__media">
-          <img src="assets/images/more-from-4.png">
-        </div>
-        <div class="mdl-card__title">
-          <h4 class="mdl-card__title-text">Create your own Android character</h4>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
-        </div>
-        <div class="mdl-card__actions">
-          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-            androidify.com
-            <mat-icon>chevron_right</mat-icon>
-          </a>
-        </div>
-      </div>
-
-      <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-        <div class="mdl-card__media">
-          <img src="assets/images/more-from-2.png">
-        </div>
-        <div class="mdl-card__title">
-          <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
-        </div>
-        <div class="mdl-card__actions">
-          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-            Download now
-            <mat-icon>chevron_right</mat-icon>
-          </a>
-        </div>
-      </div>
-
-      <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-        <div class="mdl-card__media">
-          <img src="assets/images/more-from-3.png">
-        </div>
-        <div class="mdl-card__title">
-          <h4 class="mdl-card__title-text">Millions to choose from</h4>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
-        </div>
-        <div class="mdl-card__actions">
-          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-            Find apps
-            <mat-icon>chevron_right</mat-icon>
-          </a>
-        </div>
-      </div>
+    <div class="android-section-title mdl-typography--display-1-color-contrast">LES DERNIERES ACTUALITEES</div>
+    <div class="android-card-container mdl-grid" fxLayout="row" fxLayoutAlign="space-between">
+      <mat-card fxFlex="30">
+        <mat-card-header>
+          <mat-card-title>INTERVIEW CASH B</mat-card-title>
+          <mat-card-subtitle>DATE INTERVIEW</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="/assets/images/more-from-1.png" alt="Dernière actualitée">
+        <mat-card-content>
+          <p>CASH B & PATATI & PATATA</p>
+          <p>TEXT ACTUALITEE LOREM IPSUM FUCK THE BASILIQUE TEXT ACTUALITEE LOREM IPSUM FUCK THE BASILIQUE </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button color="accent" mat-stroked-button routerLink="/social/actualitee/id">DETAILS</button>
+        </mat-card-actions>
+      </mat-card>
+      <mat-card fxFlex="30">
+        <mat-card-header>
+          <mat-card-title>TITRE ACTUALITEE</mat-card-title>
+          <mat-card-subtitle>DATE ACTUALITE</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="/assets/images/more-from-4.png" alt="Avant-dernière actualitée">
+        <mat-card-content>
+          <p>TEXT ACTUALITEE LOREM IPSUM FUCK THE BASILIQUE</p>
+          <p>TEXT ACTUALITEE LOREM IPSUM FUCK THE BASILIQUE TEXT ACTUALITEE LOREM IPSUM FUCK THE BASILIQUE </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button color="accent" mat-stroked-button routerLink="/social/actualitee/id">DETAILS</button>
+        </mat-card-actions>
+      </mat-card>
+      <mat-card fxFlex="30">
+        <mat-card-header>
+          <mat-card-title>TITRE ACTUALITEE</mat-card-title>
+          <mat-card-subtitle>DATE ACTUALITE</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="/assets/images/more-from-4.png" alt="Avant-dernière actualitée">
+        <mat-card-content>
+          <p>TEXT ACTUALITEE LOREM IPSUM FUCK THE BASILIQUE</p>
+          <p>TEXT ACTUALITEE LOREM IPSUM FUCK THE BASILIQUE TEXT ACTUALITEE LOREM IPSUM FUCK THE BASILIQUE </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button color="accent" mat-stroked-button routerLink="/social/actualitee/id">DETAILS</button>
+        </mat-card-actions>
+      </mat-card>
+      <mat-card fxFlex="30">
+        <mat-card-header>
+          <mat-card-title>MONTEE EN LIGUE 1 DE L'AMIENS SCF</mat-card-title>
+          <mat-card-subtitle>DATE MONTEE</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="/assets/images/more-from-4.png" alt="Avant-avant-dernière actualitée">
+        <mat-card-content>
+          <p>AMIENS VA BROUTER LE MEME GAZON QUE ZLATAN</p>
+          <p>TEXT ACTUALITEE LOREM IPSUM FUCK THE BASILIQUE TEXT ACTUALITEE LOREM IPSUM FUCK THE BASILIQUE </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button color="primary" mat-stroked-button routerLink="/social/actualitee/id">DETAILS</button>
+        </mat-card-actions>
+      </mat-card>
     </div>
   </div>
   <hr>
   <div class="android-more-section">
-    <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
-    <mat-card class="android-card-container mdl-grid">
-      <mat-card>
+    <div class="android-section-title mdl-typography--display-1-color-contrast">EVENEMENTS ORGANISES</div>
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <mat-card fxFlex="20">
         <mat-card-header>
-          <mat-card-title>Ligue 1</mat-card-title>
-          <mat-card-subtitle></mat-card-subtitle>
+          <mat-card-title>REPA AUX RESTOS DU CUL</mat-card-title>
+          <mat-card-subtitle>UN POUR TOUS ET TOUS SUR UN</mat-card-subtitle>
         </mat-card-header>
-        <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
-        </div>
-        <div class="mdl-card__actions">
-          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-            Make the switch
-            <mat-icon>chevron_right</mat-icon>
-          </a>
-        </div>
+        <img mat-card-image src="/assets/images/more-from-4.png" alt="Dernier évenement">
+        <mat-card-content>
+          <p>EN PLEIN RESTO, CASH B SE MIS A RAPPER :</p>
+          <p>ON A FAIM, ON A FAIM, ON A FAIM</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button color="primary" mat-stroked-button routerLink="/social/evenement/id">DETAILS</button>
+          <button color="accent" mat-stroked-button routerLink="/social/evenement/id">PARTICIPER</button>
+        </mat-card-actions>
       </mat-card>
 
-      <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-        <div class="mdl-card__media">
-          <img src="assets/images/more-from-4.png">
-        </div>
-        <div class="mdl-card__title">
-          <h4 class="mdl-card__title-text">Create your own Android character</h4>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
-        </div>
-        <div class="mdl-card__actions">
-          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-            androidify.com
-            <mat-icon>chevron_right</mat-icon>
-          </a>
-        </div>
-      </div>
+      <mat-card fxFlex="20">
+        <mat-card-header>
+          <mat-card-title>CONCERT</mat-card-title>
+          <mat-card-subtitle>LE 00 DECEMBRE 2020 AU ZENITH DE MON CUL</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="assets/images/more-from-4.png" alt="Avant-dernier évenement">
+        <mat-card-content>
+          <p>ET WHO-PET-LA !</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button color="primary" mat-stroked-button routerLink="/social/evenement/id">DETAILS</button>
+          <button color="accent" mat-stroked-button routerLink="/social/evenement/id">PARTICIPER</button>
+        </mat-card-actions>
+      </mat-card>
 
-      <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-        <div class="mdl-card__media">
-          <img src="assets/images/more-from-2.png">
-        </div>
-        <div class="mdl-card__title">
-          <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
-        </div>
-        <div class="mdl-card__actions">
-          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-            Download now
-            <mat-icon>chevron_right</mat-icon>
-          </a>
-        </div>
-      </div>
+      <mat-card fxFlex="20">
+        <mat-card-header>
+          <mat-card-title>CONCERT</mat-card-title>
+          <mat-card-subtitle>LE 00 DECEMBRE 2020 AU ZENITH DE MON CUL</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="assets/images/more-from-4.png" alt="Avant-avant-dernier évenement">
+        <mat-card-content>
+          <p>ET WHO-PET-LA !</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button color="primary" mat-stroked-button routerLink="/social/evenement/id">DETAILS</button>
+          <button color="accent" mat-stroked-button routerLink="/social/evenement/id">PARTICIPER</button>
+        </mat-card-actions>
+      </mat-card>
 
-      <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-        <div class="mdl-card__media">
-          <img src="assets/images/more-from-3.png">
-        </div>
-        <div class="mdl-card__title">
-          <h4 class="mdl-card__title-text">Millions to choose from</h4>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
-        </div>
-        <div class="mdl-card__actions">
-          <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-            Find apps
-            <mat-icon>chevron_right</mat-icon>
-          </a>
-        </div>
-      </div>
+      <mat-card fxFlex="20">
+        <mat-card-header>
+          <mat-card-title>CONCERT</mat-card-title>
+          <mat-card-subtitle>LE 00 DECEMBRE 2020 AU ZENITH DE MON CUL</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="assets/images/more-from-4.png" alt="Avant-avant-avant dernier évenement">
+        <mat-card-content>
+          <p>ET WHO-PET-LA !</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button color="primary" mat-stroked-button routerLink="/social/evenement/id">DETAILS</button>
+          <button color="accent" mat-stroked-button routerLink="/social/evenement/id">PARTICIPER</button>
+        </mat-card-actions>
+      </mat-card>
     </div>
   </div>

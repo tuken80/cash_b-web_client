@@ -12,9 +12,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 
 import { HomeComponent } from './components/home/home.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReseauxSociauxComponent } from './components/reseaux-sociaux/reseaux-sociaux.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 import { AppComponent } from './app.component';
 
@@ -22,9 +22,9 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    NotFoundComponent,
     HeaderComponent,
-    ReseauxSociauxComponent
+    ReseauxSociauxComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,
@@ -37,8 +37,8 @@ import { AppComponent } from './app.component';
   ],
   providers: [],
   exports: [
-    ReseauxSociauxComponent,
-    HeaderComponent
+    HeaderComponent,
+    ReseauxSociauxComponent
   ],
   bootstrap: [AppComponent]
 })

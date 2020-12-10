@@ -13,32 +13,40 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     switch (this.router.url) {
-      case '/actualitees.html': {
-        this.titre = 'ACTUALITEES';
-        break;
-      }
-      case '/boutique.html': {
+      case '/boutique/produits': {
         this.titre = 'BOUTIQUE';
         break;
       }
-      case '/contact.html': {
+      case '/boutique/panier': {
+        this.titre = 'PANIER';
+        break;
+      }
+      case '/social/contact': {
         this.titre = 'PAGE DE CONTACT';
         break;
       }
-      case '/evenements.html': {
-        this.titre = 'EVENEMENTS';
+      case '/social/actualitees': {
+        this.titre = 'ACTUALITEES';
         break;
       }
-      case '/license.html': {
-        this.titre = 'PAGE DE LICENSE';
+      case '/social/evenements': {
+        this.titre = 'EVENEMENTS ORGANISES';
         break;
       }
-      case '/newsletter.html': {
+      case '/social/newsletter': {
         this.titre = 'INSCRIPTION A LA NEWSLETTER';
         break;
       }
-      case '/musiques.html': {
-        this.titre = 'MUSIQUES';
+      case '/musique/videos': {
+        this.titre = 'CLIPS VIDEOS';
+        break;
+      }
+      case '/musique/downloads': {
+        this.titre = 'TELECHARGEMENTS';
+        break;
+      }
+      case '/license': {
+        this.titre = 'MENTIONS LEGALES';
         break;
       }
     }
